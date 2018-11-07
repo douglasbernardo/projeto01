@@ -10,7 +10,7 @@
 			<div id="menu">
 				<a href="#" class="btn primary">Home</a>
 				<a href="listadeusuario.php" class="btn secondary">Lista de Usuários</a>
-				<a href="#" class="btn danger">Sobre</a>
+				<a href="sobre.php" class="btn danger">Sobre</a>
 			</div>
 		</div>
 		<div id="content">
