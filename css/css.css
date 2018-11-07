@@ -15,29 +15,11 @@
 	height: 100px;
 }
 
-.botao1 {
+.btn {
 	background-color: #000000;
 	color: #D3D3D3;
 	position: sticky;
 	height: 20px;
 	left: 25px;
-	top: 190px;
-}
-
-.botao2 {
-	background-color: #000000;
-	color: #D3D3D3;
-	position: sticky;
-	height: 30px;
-	left: 78px;
-	top: 190px;
-}
-
-.botao3 {
-	background-color: #000000;
-	color: #D3D3D3;
-	position: sticky;
-	height: 40px;
-	left: 130px;
 	top: 190px;
 }
