@@ -8,13 +8,13 @@
 		<div id="header">
 			<h1>1º-Projeto</h1>
 			<div id="menu">
-				<a href="#" class="btn primary">Home</a>
+				<a href="index.php" class="btn primary">Home</a>
 				<a href="listadeusuario.php" class="btn secondary">Lista de Usuários</a>
-				<a href="#" class="btn danger">Sobre</a>
+				<a href="sobre.php" class="btn danger">Sobre</a>
 			</div>
 		</div>
 		<div id="content">
-			Home
+			Lista de Usuários
 		</div>	
 		<div id="footer"></div>
 	</body>

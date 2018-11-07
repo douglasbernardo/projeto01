@@ -5,8 +5,12 @@
 	height: 100px;
 } 
 
-#content {
+#menu {
 	background-color: #2F4F4F;
+}
+
+#content {
+	background-color: #FFFFFF;
 	height: 200px;
 }
 
@@ -15,11 +19,21 @@
 	height: 100px;
 }
 
-.btn {
-	background-color: #000000;
+a.btn {
 	color: #D3D3D3;
-	position: sticky;
-	height: 20px;
-	left: 25px;
-	top: 190px;
+	margin: 16px;
+	display: inline-block;
+	
+}
+
+.btn.primary {
+	/*background-color: #42A1E1;*/
+}
+
+.btn.danger {
+	/*background-color: #C62B1A;*/
+}
+
+.btn.secondary {
+	/*background-color: #F2F2F2;*/	
 }
