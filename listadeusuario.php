@@ -1,11 +1,9 @@
 <?php
 	include 'resources/listaDeUsuarios.php';
 
-	echo "<pre>";
-	var_dump($listaDeUsuarios);
-	echo "</pre>";
+	// echo "<pre>";
+	// var_dump($listaDeUsuarios);
 ?>
-
 <!Doctype html>
 <html>
 	<head>
@@ -22,7 +20,10 @@
 			</div>
 		</div>
 		<div id="content">
-
+ 			<?php
+	 			for($i=0;$i < count($listaDeUsuarios);$i++)
+	 			$listaDeUsuarios[$i];
+ 			?>
 		</div>
 		<div id="footer"></div>
 	</body>
