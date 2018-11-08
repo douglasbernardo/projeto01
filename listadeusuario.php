@@ -1,3 +1,11 @@
+<?php
+	include 'resources/listaDeUsuarios.php';
+
+	echo "<pre>";
+	var_dump($listaDeUsuarios);
+	echo "</pre>";
+?>
+
 <!Doctype html>
 <html>
 	<head>
@@ -14,8 +22,8 @@
 			</div>
 		</div>
 		<div id="content">
-			lista de usuario
-		</div>	
+
+		</div>
 		<div id="footer"></div>
 	</body>
 </html>

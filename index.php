@@ -14,8 +14,8 @@
 			</div>
 		</div>
 		<div id="content">
-			Home
-		</div>	
+			HOME
+		</div>
 		<div id="footer"></div>
 	</body>
 </html>

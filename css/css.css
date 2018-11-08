@@ -1,7 +1,7 @@
 /*CSS*/
 #header {
 	color: #ffffff;
-	background-color: #000000;
+	background-color: #2F4F4F;
 	height: 100px;
 } 
 
@@ -14,7 +14,7 @@
 }
 
 #footer {
-	background-color: #000000;
+	background-color: #2F4F4F;
 	height: 100px;
 }
 
@@ -35,4 +35,11 @@ a.btn {
 
 .btn.secondary {
 	/*background-color: #F2F2F2;*/	
+}
+
+p {
+	font-size: 14px;
+	font-family: serif;
+	color: 	#4169E1;
+	padding: 6px;
 }
