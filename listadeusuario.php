@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<div id="header">
-			<h1><abbr tittle="Projeto little">PTL</abbr></h1>
+			<h1>PTL</h1>
 			<div id="menu">
 				<a href="index.php" class="btn primary">Home</a>
 				<a href="#" class="btn secondary">Lista de Usuários</a>
