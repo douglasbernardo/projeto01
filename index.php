@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<div id="header">
-			<h1>1º-Projeto</h1>
+			<h1><abbr tittle="Projeto little">PTL</abbr></h1>
 			<div id="menu">
 				<a href="#" class="btn primary">Home</a>
 				<a href="listadeusuario.php" class="btn secondary">Lista de Usuários</a>

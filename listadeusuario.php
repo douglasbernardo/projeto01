@@ -1,18 +1,15 @@
 <?php
 	include 'resources/listaDeUsuarios.php';
-
-	// echo "<pre>";
-	// var_dump($listaDeUsuarios);
 ?>
 <!Doctype html>
 <html>
 	<head>
-		<title>projeto_01</title>
+		<title>PTL</title>
 		<link rel="stylesheet" type="text/css" href="css/css.css">
 	</head>
 	<body>
 		<div id="header">
-			<h1>1º-Projeto</h1>
+			<h1><abbr tittle="Projeto little">PTL</abbr></h1>
 			<div id="menu">
 				<a href="index.php" class="btn primary">Home</a>
 				<a href="#" class="btn secondary">Lista de Usuários</a>
@@ -20,9 +17,10 @@
 			</div>
 		</div>
 		<div id="content">
- 			<?php
-	 			for($i=0;$i < count($listaDeUsuarios);$i++)
-	 			$listaDeUsuarios[$i];
+ 			<?php 
+	 			for($i = 0; $i < count($listaDeUsuarios); $i++){
+	 				echo $listaDeUsuarios[$i]["nome"]." - ".$listaDeUsuarios[$i]["idade"]."<br>";	
+	 			}
  			?>
 		</div>
 		<div id="footer"></div>
