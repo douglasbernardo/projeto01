@@ -43,3 +43,12 @@ p {
 	color: 	#4169E1;
 	padding: 6px;
 }
+
+tr.silver {
+	background-color: #808080;
+}
+
+td.texto_lista_usuarios {
+	font-family: 'Kanit', sans-serif;
+	font-size: 15px;
+}
