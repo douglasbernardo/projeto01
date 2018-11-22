@@ -7,6 +7,8 @@
 		<title>PTL</title>
 		<link rel="stylesheet" type="text/css" href="css/css.css">
 		<link href="https://fonts.googleapis.com/css?family=Kanit|Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Pacifico" rel="stylesheet">
+
 	</head>
 	<body>
 		<div id="header">
