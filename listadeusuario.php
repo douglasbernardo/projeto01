@@ -22,9 +22,9 @@
 		<div id="content">
 		<table border>
 			<tr>
-				<th>id</th>
-				<th>nome</th>
-				<th>idade</th>
+				<th>id:</th>
+				<th>nome:</th>
+				<th>idade:</th>
 			</tr>
  			<?php 
 	 			for($i = 0; $i < count($listaDeUsuarios); $i++) {
