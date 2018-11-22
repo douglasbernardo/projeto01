@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<div id="content">
-			HOME
+			<p>PROJETO_01 SENDO MONTADO</p>
 		</div>
 		<div id="footer">
 			<h2 align="middle">PROJETO LITTLE</h2>
