@@ -16,6 +16,8 @@
 #footer {
 	background-color: #2F4F4F;
 	height: 100px;
+	color: white;
+	float: none;
 }
 
 a.btn {
@@ -40,7 +42,7 @@ a.btn {
 p {
 	font-size: 14px;
 	font-family: 'Pacifico', cursive;
-	color: 	#4169E1;
+	color: #2F4F4F;
 	padding: 6px;
 }
 

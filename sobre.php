@@ -28,7 +28,7 @@
 			</div>
 		</div>	
 		<div id="footer">
-			
+			<h2 align="middle">PROJETO LITTLE</h2>
 		</div>
 	</body>
 </html>
