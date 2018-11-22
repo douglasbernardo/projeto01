@@ -18,7 +18,7 @@
 			</div>
 		</div>
 		<div id="content">
-		<table>	
+		<table border>
 			<tr>
 				<th>id</th>
 				<th>nome</th>
@@ -28,7 +28,7 @@
 	 			for($i = 0; $i < count($listaDeUsuarios); $i++) {
 	 			//echo $listaDeUsuarios[$i]["nome"]." - ".$listaDeUsuarios[$i]["idade"]."<br>";
 	 		?>
-	 			<tr class=<?php if($i%2 == 0) { echo "silver"; } else { echo "white"; } ?>>
+	 			<tr class=<?php if($i%2 == 0) { echo "silver"; } else { echo "red"; } ?>>
 	 				<td class="texto_lista_usuarios"><?php echo $i+1; ?></td>
 	 				<td class="texto_lista_usuarios"><?php echo $listaDeUsuarios[$i]["nome"]; ?></td>
 	 				<td class="texto_lista_usuarios"><?php echo $listaDeUsuarios[$i]["idade"]; ?></td>
