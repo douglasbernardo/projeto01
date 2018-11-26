@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		<div id="content">
-			<p>PROJETO_01 SENDO MONTADO</p>
+			<p>PROJETO_01 ESTA SENDO MONTADO</p>
 		</div>
 		<div id="footer">
 			<h3 align="middle">PROJETO_01</h3>
