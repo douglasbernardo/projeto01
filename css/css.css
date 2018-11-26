@@ -28,20 +28,20 @@ a.btn {
 }
 
 .btn.primary {
-	/*background-color: #42A1E1;*/
+	font-family: 'Rubik Mono One', sans-serif;
 }
 
 .btn.danger {
-	/*background-color: #C62B1A;*/
+	font-family: 'Rubik Mono One', sans-serif;
 }
 
 .btn.secondary {
-	/*background-color: #F2F2F2;*/	
+	font-family: 'Rubik Mono One', sans-serif;
 }
 
 p{
 	font-size: 14px;
-	font-family: 'Ranga', cursive;
+	font-family: 'Fjalla One', sans-serif;
 	color: #2F4F4F;
 	padding: 6px;
 }
@@ -53,4 +53,7 @@ tr.silver {
 td.texto_lista_usuarios {
 	font-family: 'Kanit', sans-serif;
 	font-size: 15px;
+}
+h2{
+	font-family: 'Rubik Mono One', sans-serif;
 }

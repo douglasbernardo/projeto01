@@ -7,7 +7,7 @@
 		<title>PTL</title>
 		<link rel="stylesheet" type="text/css" href="css/css.css">
 		<link href="https://fonts.googleapis.com/css?family=Kanit|Roboto" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
 	</head>
 	<body>
 		<div id="header">
@@ -40,7 +40,7 @@
  		</table>
 		</div>
 		<div id="footer">
-			<h2 align="middle">PROJETO_01</h2>
+			<h3 align="middle">PROJETO_01</h3>
 		</div>
 	</body>
 </html>
