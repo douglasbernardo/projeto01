@@ -30,7 +30,6 @@
 			</div>
 		</div>	
 		<div id="footer">
-			<h3 align="middle">PROJETO_01</h3>
 		</div>
 	</body>
 </html>

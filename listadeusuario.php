@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/css.css">
 		<link href="https://fonts.googleapis.com/css?family=Kanit|Roboto" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 	</head>
 	<body>
 		<div id="header">
@@ -40,7 +41,6 @@
  		</table>
 		</div>
 		<div id="footer">
-			<h3 align="middle">PROJETO_01</h3>
 		</div>
 	</body>
 </html>
