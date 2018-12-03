@@ -3,6 +3,7 @@
 	<head>
 		<title>projeto_01</title>
 		<link rel="stylesheet" type="text/css" href="css/css.css">
+		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
 	</head>
 	<body>
 		<div id="header">
