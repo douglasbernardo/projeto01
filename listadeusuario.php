@@ -15,6 +15,7 @@
 			<h1><abbr title="Projeto Little">PTL</abbr></h1>
 			<div id="menu">
 				<a href="index.php" class="btn primary">Home</a>
+				<a href="cadastrar.php" class="btn secondary">Cadastrar</a>
 				<a href="#" class="btn secondary">Lista de Usuários</a>
 				<a href="sobre.php" class="btn danger">Sobre</a>
 			</div>
