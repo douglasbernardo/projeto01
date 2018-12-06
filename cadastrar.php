@@ -16,38 +16,41 @@
 				<a href="#" class="btn danger">Sobre</a>
 			</div>
 		</div>
-		<!-- CADASTRAR NOMES-->
-		<table cellspacing="3">
-			<tr>
-				<td>
-					<label for="NOME">SEU NOME:</label>
-				</td>
-				<td>
-					<input type="text" name="NOME">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<label for="SOBRENOME">SOBRENOME:</label>
-				</td>
-				<td>
-					<input type="text" name="SOBRENOME">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<label for="IDADE">IDADE:</label>
-				</td>
-				<td>
-					<input type="text" name="IDADE">
-				</td>
-			</tr>			
-		</table>
-		<a href="listadeusuario.php">
-     		<input type="submit" value="CADASTRAR">
-		</a>
-		<a href="index.php">
-			<input type="reset" value="CANCELAR">
-		</a>		
+		<div id="content">
+				<!-- CADASTRAR NOMES-->
+			<table cellspacing="3">
+				<tr>
+					<td>
+						<label for="NOME">SEU NOME:</label>
+					</td>
+					<td>
+						<input type="text" name="NOME">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="SOBRENOME">SOBRENOME:</label>
+					</td>
+					<td>
+						<input type="text" name="SOBRENOME">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="IDADE">IDADE:</label>
+					</td>
+					<td>
+						<input type="text" name="IDADE">
+					</td>
+				</tr>			
+				</table>
+				<a href="listadeusuario.php" class="botao01">
+     				<input type="submit" value="CADASTRAR">
+				</a>
+				<a href="index.php" class="botao02">
+					<input type="reset" value="CANCELAR">
+				</a>
+			</table>
+		</div>		
 	</body>
 </html>

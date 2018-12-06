@@ -24,21 +24,6 @@ a.btn {
 	color: #D3D3D3;
 	margin: 16px;
 	display: inline-block;
-	
-}
-
-.btn.primary {
-	font-family: 'Fjalla One', sans-serif;
-}
-.btn.secondary {
-	font-family: 'Fjalla One', sans-serif;
-}
-
-.btn.danger {
-	font-family: 'Fjalla One', sans-serif;
-}
-
-.btn.third {
 	font-family: 'Fjalla One', sans-serif;
 }
 
@@ -67,7 +52,24 @@ table {
 	padding-top: 15px;
 	font-family: 'Fjalla One', sans-serif;
 }
-a.button{
-	left: 100px;
-	right: 100px;
+.botao01 {
+ 
+	color: #616165;
+	font-family: 'Fjalla One', sans-serif;
+	top: 10px;
+	left: 14px;
+	font-size: 14px;
+	padding: 5px 15px;
+	position: relative;
+	width: 80px;
+}
+.botao02 {
+	top: 10px;
+	color: #616165;
+	right: 15px;
+	left: 10px;
+	font-size: 14px;
+	padding: 5px 15px;
+	position: relative;
+	width: 80px;	
 }
