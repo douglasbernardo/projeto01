@@ -31,7 +31,7 @@
 	 			for($i = 0; $i < count($listaDeUsuarios); $i++) {
 	 			//echo $listaDeUsuarios[$i]["nome"]." - ".$listaDeUsuarios[$i]["idade"]."<br>";
 	 		?>
-	 			<tr class=<?php if($i%2 == 0) { echo "silver"; } else { echo "red"; } ?>>
+	 			<tr class=<?php if($i%2 == 0) { echo "#DCDCDC"; } else { echo "silver"; } ?>>
 	 				<td class="texto_lista_usuarios"><?php echo $i+1; ?></td>
 	 				<td class="texto_lista_usuarios"><?php echo $listaDeUsuarios[$i]["nome"]; ?></td>
 	 				<td class="texto_lista_usuarios"><?php echo $listaDeUsuarios[$i]["idade"]; ?></td>

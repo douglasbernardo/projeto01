@@ -67,3 +67,7 @@ table {
 	padding-top: 15px;
 	font-family: 'Fjalla One', sans-serif;
 }
+a.button{
+	left: 100px;
+	right: 100px;
+}

@@ -44,10 +44,10 @@
 			</tr>			
 		</table>
 		<a href="listadeusuario.php">
-     		<button class="btn btn-cadastrar">CADASTRAR</button>
+     		<input type="submit" value="CADASTRAR">
 		</a>
 		<a href="index.php">
-			<button class="btn btn-cancelar">CANCELAR</button>
+			<input type="reset" value="CANCELAR">
 		</a>		
 	</body>
 </html>
