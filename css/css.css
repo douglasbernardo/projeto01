@@ -62,6 +62,8 @@ h2 {
 	font-family: 'Rubik Mono One', sans-serif;
 	font-size: 20px;
 }
-td.table{
+table {
+	height: 70px;
+	padding-top: 15px;
 	font-family: 'Fjalla One', sans-serif;
 }
