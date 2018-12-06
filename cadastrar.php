@@ -13,7 +13,7 @@
 				<a href="index.php" class="btn primary">Home</a>
 				<a href="#" class="btn secondary">Cadastro</a>
 				<a href="listadeusuario.php" class="btn secondary">Lista de Usuários</a>
-				<a href="#" class="btn danger">Sobre</a>
+				<a href="sobre.php" class="btn danger">Sobre</a>
 			</div>
 		</div>
 		<div id="content">
@@ -44,7 +44,7 @@
 					</td>
 				</tr>			
 				</table>
-				<a href="listadeusuario.php" class="botao01">
+				<a href="cadastrarusuarios.php" class="botao01">
      				<input type="submit" value="CADASTRAR">
 				</a>
 				<a href="index.php" class="botao02">
