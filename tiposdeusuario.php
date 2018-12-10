@@ -23,10 +23,13 @@
 						<label for="tipodeusuario">Tipo: </label>
 					</td>
 					<td align="left">
-						<input type="seutipo" name="tipodeusuario">
+						<input type="text" name="tipo">
 					</td>
 					<td>
 						<input type="submit" name="enviar">
+					</td>
+					<td>
+						<input type="reset" name="voltar">
 					</td>
 				</tr>
 			</table>
