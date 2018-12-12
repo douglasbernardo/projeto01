@@ -1,5 +1,10 @@
 <?php
-	include 'resources/listaDeUsuarios.php';
+	include 'DB/connect.php';
+
+	if (!empty($_POST["NOME"]) && !empty($_POST["SOBRENOME"]) && !empty($_POST["IDADE"]) && !empty($_POST["tipos"])) {
+		$sql = "INSERT INTO usuarios (NOME, SOBRENOME, IDADE, TIPO) VALUES ('".$_POST["NOME"]."', '".$_POST["SOBRENOME"]."', '".$_POST["IDADE"]."', '".$_POST["tipos"]."')";
+		mysqli_query($link, $sql);
+	}
 ?>
 <!Doctype html>
 <html>
@@ -22,27 +27,37 @@
 			</div>
 		</div>
 		<div id="content">
-		<table border>
-			<tr>
-				<th>Id:</th>
-				<th>Nome:</th>
-				<th>Idade:</th>
-			</tr>
- 			<?php 
-	 			for($i = 0; $i < count($listaDeUsuarios); $i++) {
-	 			//echo $listaDeUsuarios[$i]["nome"]." - ".$listaDeUsuarios[$i]["idade"]."<br>";
-	 		?>
-	 			<tr class=<?php if($i%2 == 0) { echo "#DCDCDC"; } else { echo "silver"; } ?>>
-	 				<td class="texto_lista_usuarios"><?php echo $i+1; ?></td>
-	 				<td class="texto_lista_usuarios"><?php echo $listaDeUsuarios[$i]["nome"]; ?></td>
-	 				<td class="texto_lista_usuarios"><?php echo $listaDeUsuarios[$i]["idade"]; ?></td>
-	 			</tr>
-	 		<?php			
-	 			}
- 			?>
- 		</table>
+			<table border>
+				<tr>
+					<th>Id:</th>
+					<th>Nome:</th>
+					<th>Idade:</th>
+				</tr>
+			 	<?php 
+				 	$sql = "SELECT * FROM usuarios";
+					$query = mysqli_query($link, $sql);
+
+					$i = 0;
+					while($usuarios = mysqli_fetch_array($query)) {
+				?>
+						<tr class=<?php if($i%2 == 0) { echo "#DCDCDC"; } else { echo "silver"; } ?>>
+						 	<td class="texto_lista_usuarios"><?php echo $usuarios[0]; ?></td>
+						 	<td class="texto_lista_usuarios"><?php echo $usuarios[1]." ".$usuarios[2]; ?></td>
+						 	<td class="texto_lista_usuarios"><?php echo $usuarios[3]; ?></td>
+						 	<td>
+						 		<a href="alterar.php">Alterar</a>
+						 	</td>
+						 	<td>
+						 		<a href="deletar.php">Deletar</a></td>
+						</tr>
+				<?php	
+						$i++;		
+				 	}
+			 	?>	
+ 			</table>
 		</div>
 		<div id="footer">
+
 		</div>
 	</body>
 </html>

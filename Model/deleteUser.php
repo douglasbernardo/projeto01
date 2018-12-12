@@ -2,7 +2,7 @@
 
 include '../DB/connect.php';
 
-$sql = "DELETE FROM usuarios where ID = 28";
+$sql = "DELETE FROM usuarios where ID = 24";
 
 $query = mysqli_query($link, $sql);
 

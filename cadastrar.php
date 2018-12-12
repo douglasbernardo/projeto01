@@ -1,3 +1,6 @@
+<?php
+	include 'DB/connect.php';
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -18,7 +21,7 @@
 			</div>
 		</div>
 		<div id="content">
-			<form method="post" action="cadastrarusuarios.php">
+			<form method="post" action="listadeusuario.php">
 				<table cellspacing="3">
 					<!-- CADASTRAR NOMES-->
 					<tr>
@@ -43,6 +46,23 @@
 						</td>
 						<td>
 							<input type="text" name="IDADE">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>TIPO:</label>
+						</td>
+						<td>
+							<select name="tipos">;
+								<?php
+									// Trazer do banco de dados todos os tipos disponíveis
+									$sql = "SELECT * FROM tipo_usuarios";
+									$query = mysqli_query($link, $sql);
+									while ($row = mysqli_fetch_array($query)) {
+										echo "<option value=".$row[0].">".$row[1]."</option>";
+									}
+								?>
+							</select>
 						</td>
 					</tr>
 					<tr>
