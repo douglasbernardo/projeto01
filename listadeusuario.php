@@ -45,10 +45,10 @@
 						 	<td class="texto_lista_usuarios"><?php echo $usuarios[1]." ".$usuarios[2]; ?></td>
 						 	<td class="texto_lista_usuarios"><?php echo $usuarios[3]; ?></td>
 						 	<td>
-						 		<a href="alterar.php">Alterar</a>
+						 		<a href="exibe.php?id=<?php echo $usuarios[0]; ?>">Alterar</a>
 						 	</td>
 						 	<td>
-						 		<a href="deletar.php">Deletar</a></td>
+						 		<a href="delete.php">Deletar</a></td>
 						</tr>
 				<?php	
 						$i++;		
