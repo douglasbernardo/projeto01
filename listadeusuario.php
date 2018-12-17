@@ -5,6 +5,12 @@
 		$sql = "INSERT INTO usuarios (NOME, SOBRENOME, IDADE, TIPO) VALUES ('".$_POST["NOME"]."', '".$_POST["SOBRENOME"]."', '".$_POST["IDADE"]."', '".$_POST["tipos"]."')";
 		mysqli_query($link, $sql);
 	}
+
+	if (!empty($_GET["action"]) && $_GET["action"] == "delete") {
+		echo "deletar esse id ".$_GET["id"];
+		$sql = "DELETE FROM usuarios 	WHERE ID =".$_GET['id'];
+		$queryUpdate = mysqli_query($link, $sql);
+	}
 ?>
 <!Doctype html>
 <html>
@@ -48,7 +54,7 @@
 						 		<a href="exibe.php?id=<?php echo $usuarios[0]; ?>">Alterar</a>
 						 	</td>
 						 	<td>
-						 		<a href="delete.php?id=<?php echo $usuarios[0]; ?>">Deletar</a></td>
+						 		<a href="listadeusuario.php?action=delete&id=<?php echo $usuarios[0]; ?>">Deletar</a></td>
 						</tr>
 				<?php	
 						$i++;		
