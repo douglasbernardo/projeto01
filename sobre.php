@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div id="header">
-			<h1><abbr title="Projeto Little">PTL</abbr></h1>
+			<h2><abbr title="Projeto Little">PTL</abbr></h2>
 			<div id="menu">
 				<a href="index.php" class="btn primary">Home</a>
 				<a href="cadastrar.php" class="btn secondary">Cadastre-se</a>

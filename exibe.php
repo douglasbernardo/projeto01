@@ -56,16 +56,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<head>
-		<title>ALTER</title>
+		<title>ALTERAR</title>
 		<link rel="stylesheet" type="text/css" href="css/css.css">
 		<link href="https://fonts.googleapis.com/css?family=Kanit|Roboto" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 	</head>
-		
-	</head>
-		<body>
+	<body>
 		<div id="header">
 			<h1><abbr title="Projeto Little">PTL</abbr></h1>
 			<div id="menu">
@@ -76,7 +73,7 @@
 				<a href="sobre.php" class="btn danger">Sobre</a>
 			</div>
 		</div>
-		<h1>Alteração de registro</h1>
+		<h2>Alteração de registro</h2>
 		<?php
 			if($queryUpdate) {
 		?>
