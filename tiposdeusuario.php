@@ -20,16 +20,16 @@
 			<table>
 				<tr>
 					<td>
-						<label for="tipodeusuario">Tipo: </label>
+						<label for="tipodeusuario">TIPO: </label>
 					</td>
 					<td align="left">
 						<input type="text" name="tipo">
 					</td>
-					<td>
-						<input type="submit" name="enviar">
+					<td class="btns">
+						<input type="submit" value ="ENVIAR">
 					</td>
-					<td>
-						<input type="reset" name="voltar">
+					<td class="btl">
+						<input type="reset" value="CANCELAR">
 					</td>
 				</tr>
 			</table>

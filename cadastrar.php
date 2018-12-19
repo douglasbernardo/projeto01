@@ -66,10 +66,10 @@
 						</td>
 					</tr>
 					<tr>
-						<td>
+						<td class="bjl">
 							<input type="submit" value="CADASTRAR">
 						</td>
-						<td>
+						<td class="bgo">
 							<input type="reset" value="CANCELAR">
 						</td>
 					</tr>

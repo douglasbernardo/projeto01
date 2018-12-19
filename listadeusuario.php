@@ -50,10 +50,10 @@
 						 	<td class="texto_lista_usuarios"><?php echo $usuarios[0]; ?></td>
 						 	<td class="texto_lista_usuarios"><?php echo $usuarios[1]." ".$usuarios[2]; ?></td>
 						 	<td class="texto_lista_usuarios"><?php echo $usuarios[3]; ?></td>
-						 	<td>
+						 	<td class="alter">
 						 		<a href="exibe.php?id=<?php echo $usuarios[0]; ?>">Alterar</a>
 						 	</td>
-						 	<td>
+						 	<td class="delet">
 						 		<a href="listadeusuario.php?action=delete&id=<?php echo $usuarios[0]; ?>">Deletar</a></td>
 						</tr>
 				<?php	

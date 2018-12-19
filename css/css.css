@@ -78,3 +78,60 @@ table {
 h1{
 	font-family: 'Rubik Mono One', sans-serif;
 }
+
+.btns input{
+	border-radius: 5px;
+  	border: 1px solid #333;
+ 	background-color: Teal;
+  	color: #fff;
+  	height: 30px;
+ 	width: 66px;
+}
+.btl input[type=reset]{
+	border-radius: 5px;
+  	border: 1px solid #333;
+  	background-color: Teal;
+  	color: #fff;
+  	height: 30px;
+ 	width: 89px;
+}
+.bnt input{
+	border-radius: 5px;
+  	border: 1px solid #333;
+  	background-color: Teal;
+  	color: #fff;
+  	height: 30px;
+ 	width: 70px;
+}
+.alter a{
+	border-radius: 5px;
+  	border: 1px solid #333;
+  	background-color: Teal;
+  	color: #fff;
+  	height: 30px;
+ 	width: 70px;
+}
+.delet a{
+	border-radius: 5px;
+  	border: 1px solid #333;
+  	background-color: Teal;
+  	color: #fff;
+  	height: 30px;
+ 	width: 70px;
+}
+.bjl input{
+	border-radius: 5px;
+  	border: 1px solid #333;
+  	background-color: Teal;
+  	color: #fff;
+  	height: 30px;
+ 	width: 93px;
+}
+.bgo input{
+	border-radius: 5px;
+  	border: 1px solid #333;
+  	background-color: Teal;
+  	color: #fff;
+  	height: 30px;
+ 	width: 85px;
+}
