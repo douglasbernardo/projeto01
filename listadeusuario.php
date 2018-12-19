@@ -33,7 +33,7 @@
 			</div>
 		</div>
 		<div id="content">
-			<table border>
+			<table border="1">
 				<tr>
 					<th>Id:</th>
 					<th>Nome:</th>
@@ -51,10 +51,11 @@
 						 	<td class="texto_lista_usuarios"><?php echo $usuarios[1]." ".$usuarios[2]; ?></td>
 						 	<td class="texto_lista_usuarios"><?php echo $usuarios[3]; ?></td>
 						 	<td class="alter">
-						 		<a href="exibe.php?id=<?php echo $usuarios[0]; ?>">Alterar</a>
+						 		<a href="exibe.php?id=<?php echo $usuarios[0]; ?>"><input type="submit" value="ALTERAR">
 						 	</td>
 						 	<td class="delet">
-						 		<a href="listadeusuario.php?action=delete&id=<?php echo $usuarios[0]; ?>">Deletar</a></td>
+						 		<a href="listadeusuario.php?action=delete&id=<?php echo $usuarios[0]; ?>"><input type="reset" value="DELETAR">
+						 	</td>
 						</tr>
 				<?php	
 						$i++;		

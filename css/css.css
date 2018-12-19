@@ -103,21 +103,26 @@ h1{
   	height: 30px;
  	width: 70px;
 }
-.alter a{
+.alter input{
+	font-family: 'Kanit', sans-serif;
 	border-radius: 5px;
   	border: 1px solid #333;
   	background-color: Teal;
   	color: #fff;
   	height: 30px;
- 	width: 70px;
+ 	width: 75px;
+ 	padding: 5px;
+ 	
 }
-.delet a{
+.delet input{
+	font-family: 'Kanit', sans-serif;
 	border-radius: 5px;
   	border: 1px solid #333;
   	background-color: Teal;
   	color: #fff;
   	height: 30px;
- 	width: 70px;
+ 	width: 75px;
+ 	padding: 5px;
 }
 .bjl input{
 	border-radius: 5px;
