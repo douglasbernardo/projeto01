@@ -7,7 +7,6 @@
 	}
 
 	if (!empty($_GET["action"]) && $_GET["action"] == "delete") {
-		echo "deletar esse id ".$_GET["id"];
 		$sql = "DELETE FROM usuarios 	WHERE ID =".$_GET['id'];
 		$queryUpdate = mysqli_query($link, $sql);
 	}
