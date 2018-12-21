@@ -50,10 +50,10 @@
 						 	<td class="texto_lista_usuarios"><?php echo $usuarios[1]." ".$usuarios[2]; ?></td>
 						 	<td class="texto_lista_usuarios"><?php echo $usuarios[3]; ?></td>
 						 	<td class="alter">
-						 		<a href="exibe.php?id=<?php echo $usuarios[0]; ?>"><input type="submit" name="ALTERAR" value="ALTERAR">
+						 		<a href="exibe.php?id=<?php echo $usuarios[0]; ?>"><input type="submit" value="ALTERAR">
 						 	</td>
 						 	<td class="delet">
-						 		<a href="listadeusuario.php?action=delete&id=<?php echo $usuarios[0]; ?>"><input type="reset" name="DELETAR"   value="DELETAR">
+						 		<a href="listadeusuario.php?action=delete&id=<?php echo $usuarios[0]; ?>"><input type="reset" value="DELETAR">
 						 	</td>
 						</tr>
 				<?php	
