@@ -133,7 +133,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td colspan=2 align= right>
+						<td>
 							<input type="submit" value="alterar">
 							<input type="reset" value="cancelar">
 						</td>
