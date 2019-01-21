@@ -26,7 +26,7 @@
 					<!-- CADASTRAR NOMES-->
 					<tr>
 						<td>
-							<label for="NOME">SEU NOME:</label>
+							<label for="NOME">NOME:</label>
 						</td>
 						<td>
 							<input type="text" name="NOME">
