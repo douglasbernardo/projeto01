@@ -18,7 +18,7 @@
 			</div>
 		</div>
 		<div id="content">
-			<p>PROJETO_01 ESTA SENDO MONTADO</p>
+			<p>PROJETO_01 MONTADO</p>
 		</div>
 		<div id="footer">
 		</div>

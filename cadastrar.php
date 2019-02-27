@@ -62,6 +62,8 @@
 										echo "<option value=".$row[0].">".$row[1]."</option>";
 									}
 								?>
+									}
+								?>
 							</select>
 						</td>
 					</tr>

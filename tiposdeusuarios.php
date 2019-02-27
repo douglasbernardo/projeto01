@@ -1,3 +1,6 @@
+<?php
+	include '..DB/connect.php';
+?>
 <!DOCTYPE html>
 <html>
 	<head>

@@ -77,67 +77,67 @@
 		<?php
 			if($queryUpdate) {
 		?>
-				<h3>Usuário atualizado com sucesso!</h3>
+			<h3>Usuário atualizado com sucesso!</h3>
 		<?php
 			}
 		?>
 		<form method="post" action="?action=alterar">
 			<input type="hidden" name="id" value="<?php echo $id; ?>">
-				<table cellspacing="3">
-					<!-- ALTERAÇÃO DOS NOMES-->
-					<tr>
-						<td>
-							<label for="NOME">SEU NOME:</label>
-						</td>
-						<td>
-							<input type="text" name="nome" value="<?php echo $nome; ?>">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label for="SOBRENOME">SOBRENOME:</label>
-						</td>
-						<td>
-							<input type="text" name="sobrenome" value="<?php echo $sobrenome; ?>">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label for="IDADE">IDADE:</label>
-						</td>
-						<td>
-							<input type="text" name="idade" value="<?php echo $idade; ?>">
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label>TIPO:</label>
-						</td>
-						<td>
-							<select name="tipos">;
-								<?php
-									// Trazer do banco de dados todos os tipos disponíveis
-									$sql = "SELECT * FROM tipo_usuarios";
-									$query = mysqli_query($link, $sql);
-									while ($row = mysqli_fetch_array($query)) {
-										if($row[0] == $tipo) {
-											echo "<option selected value=".$row[0].">".$row[1]."</option>";	
-										}
-										else {
-											echo "<option value=".$row[0].">".$row[1]."</option>";
-										}
-										
+			<table cellspacing="3">
+				<!-- ALTERAÇÃO DOS NOMES-->
+				<tr>
+					<td>
+						<label for="NOME">SEU NOME:</label>
+					</td>
+					<td>
+						<input type="text" name="nome" value="<?php echo $nome; ?>">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="SOBRENOME">SOBRENOME:</label>
+					</td>
+					<td>
+						<input type="text" name="sobrenome" value="<?php echo $sobrenome; ?>">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="IDADE">IDADE:</label>
+					</td>
+					<td>
+						<input type="text" name="idade" value="<?php echo $idade; ?>">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>TIPO:</label>
+					</td>
+					<td>
+						<select name="tipos">;
+							<?php
+								// Trazer do banco de dados todos os tipos disponíveis
+								$sql = "SELECT * FROM tipo_usuarios";
+								$query = mysqli_query($link, $sql);
+								while ($row = mysqli_fetch_array($query)) {
+									if($row[0] == $tipo) {
+										echo "<option selected value=".$row[0].">".$row[1]."</option>";	
 									}
-								?>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="submit" value="alterar">
-							<input type="reset" value="cancelar">
-						</td>
-					</tr>
+									else {
+										echo "<option value=".$row[0].">".$row[1]."</option>";
+									}
+									
+								}
+							?>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" value="alterar">
+						<input type="reset" value="cancelar">
+					</td>
+				</tr>
 			</table>
 			<div id="footer">
 
