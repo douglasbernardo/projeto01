@@ -12,7 +12,7 @@
 			<div id="menu">
 				<a href="index.php" class="btn primary">Home</a>
 				<a href="cadastrar.php" class="btn secondary">Cadastre-se</a>
-				<a href="listadeusuario.php" class="btn third">Lista de Usuários</a>
+		p\		<a href="listadeusuario.php" class="btn third">Lista de Usuários</a>
 				<a href="tiposdeusuario.php" class="btn fourth">Tipos de Usuários</a>
 				<a href="#" class="btn danger">Sobre</a>
 			</div>

@@ -6,17 +6,11 @@
 	background-color: #2F4F4F;
 	height: 100px;
 } 
-
-#menu {
-	background-color: #2F4F4F;
-}
-
 #content {
 	background-color: #FFFFFF;
 }
 
 #footer {
-	background-color: #2F4F4F;
 	height: 100px;
 	color: white;
 	float: none;
@@ -26,6 +20,7 @@ a.btn {
 	color: #D3D3D3;
 	margin: 16px;
 	display: inline-block;
+	background-color: #2F4F4F;
 	font-family: 'Fjalla One', sans-serif;
 }
 
