@@ -1,5 +1,6 @@
 <?php
-	include 'resources/listaDeUsuarios.php';
+	
+	require_once ("resources/listaDeUsuarios.php");
 ?>
 <!Doctype html>
 <html>
@@ -22,18 +23,20 @@
 		<div id="content">
 		<table border>
 			<tr>
-				<th>id:</th>
 				<th>nome:</th>
 				<th>idade:</th>
+				<th>excluir</th>
 			</tr>
  			<?php 
-	 			for($i = 0; $i < count($listaDeUsuarios); $i++) {
+ 				?>
+ 				<?php
+	 				while($row = mysqli_fetch_array($query,MYSQLI_ASSOC)) {
 	 			//echo $listaDeUsuarios[$i]["nome"]." - ".$listaDeUsuarios[$i]["idade"]."<br>";
 	 		?>
-	 			<tr class=<?php if($i%2 == 0) { echo "silver"; } else { echo "red"; } ?>>
-	 				<td class="texto_lista_usuarios"><?php echo $i+1; ?></td>
-	 				<td class="texto_lista_usuarios"><?php echo $listaDeUsuarios[$i]["nome"]; ?></td>
-	 				<td class="texto_lista_usuarios"><?php echo $listaDeUsuarios[$i]["idade"]; ?></td>
+	 			<tr class=<?php if($row['id']%2 == 0) { echo "silver"; } else { echo "red"; } ?>>
+	 				<td class="texto_lista_usuarios"><?php echo $row["nome"]; ?></td>
+	 				<td class="texto_lista_usuarios"><?php echo $row["idade"]; ?></td>
+	 				<td class="texto_lista_usuarios"><a href="excluir.php?id=<?php echo $row['id']; ?> ">Excluir Usuario</a></td>
 	 			</tr>
 	 		<?php			
 	 			}

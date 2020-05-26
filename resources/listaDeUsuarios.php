@@ -1,54 +1,11 @@
 <?php
-	$listaDeUsuarios = [
-		["nome" => "Windy Kring", "idade" => "18"],
-		["nome" => "Liana Dorrance", "idade" => "58"],
-		["nome" => "Cari Waterman", "idade" => "24"],
-		["nome" => "Shameka Borders", "idade" => "21"],
-		["nome" => "Raelene Falkowski", "idade" => "59"],
-		["nome" => "Huong Dettman", "idade" => "51"],
-		["nome" => "Tamela Bourn", "idade" => "51"],
-		["nome" => "Xiomara Emmerich", "idade" => "21"],
-		["nome" => "Sigrid Dicks", "idade" => "20"],
-		["nome" => "Donnie Kluge", "idade" => "23"],
-		["nome" => "Lillia Vanguilder", "idade" => "29"],
-		["nome" => "Maureen Rentz", "idade" => "36"],
-		["nome" => "Bernetta Rech", "idade" => "69"],
-		["nome" => "Vasiliki Bullion", "idade" => "20"],
-		["nome" => "Marybelle Beliveau", "idade" => "54"],
-		["nome" => "Karyn Penfield", "idade" => "41"],
-		["nome" => "Machelle Cosby", "idade" => "19"],
-		["nome" => "Veola Wilkie", "idade" => "70"],
-		["nome" => "Marya Shire", "idade" => "32"],
-		["nome" => "Emely Deitch", "idade" => "58"],
-		["nome" => "Luna Parenteau", "idade" => "45"],
-		["nome" => "Beatrice Kovac", "idade" => "18"],
-		["nome" => "Iraida Lazarus", "idade" => "24"],
-		["nome" => "Sylvia Stackhouse", "idade" => "21"],
-		["nome" => "Teresita Stacker", "idade" => "61"],
-		["nome" => "Leonia Froman", "idade" => "30"],
-		["nome" => "Cortez Wass", "idade" => "39"],
-		["nome" => "Billie Larocque", "idade" => "36"],
-		["nome" => "Walton Sieren", "idade" => "37"],
-		["nome" => "Roselia Drews", "idade" => "55"],
-		["nome" => "Salvatore Andres", "idade" => "49"],
-		["nome" => "Bryant Kratky", "idade" => "45"],
-		["nome" => "Domingo Strahan", "idade" => "53"],
-		["nome" => "Khadijah Riddles", "idade" => "39"],
-		["nome" => "Christoper Clapper", "idade" => "54"],
-		["nome" => "Janene Meagher", "idade" => "61"],
-		["nome" => "Rudy Lahti", "idade" => "24"],
-		["nome" => "Apryl Holtzclaw", "idade" => "46"],
-		["nome" => "Erlinda Place", "idade" => "66"],
-		["nome" => "Sebastian Hanselman", "idade" => "58"],
-		["nome" => "Billy Stults", "idade" => "30"],
-		["nome" => "Dreama Nunes", "idade" => "60"],
-		["nome" => "Alyson Wigger", "idade" => "70"],
-		["nome" => "Cedric Nowell", "idade" => "45"],
-		["nome" => "Cherryl Copp", "idade" => "49"],
-		["nome" => "Asha Low", "idade" => "52"],
-		["nome" => "Cheyenne Koren", "idade" => "28"],
-		["nome" => "Renay Kelsey", "idade" => "64"],
-		["nome" => "Adelaida Hanner", "idade" => "17"],
-		["nome" => "Cristobal Schroye", "idade" => "70"]
-	];
+	
+	require "DB/connect.php";
+
+	$sql = "SELECT id,nome,idade FROM usuarios";
+	$query = mysqli_query($link,$sql);
+
+	if($query === true){
+		header("location: listadeusuario.php");
+	}
 ?>

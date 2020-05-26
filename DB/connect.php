@@ -7,7 +7,7 @@
 	$servidor = 'localhost';
 	$usuario  = 'root';
 	$senha    = "";
-	$banco    = 'ESTUDOS';
+	$banco    = 'estudos';
 
 	# Executa uma conexão com o banco de dados
 	$link = mysqli_connect($servidor, $usuario, $senha, $banco) or die("Não foi possível conectar: ".mysqli_connect_error());
