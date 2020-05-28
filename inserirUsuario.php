@@ -1,15 +1,16 @@
 <?php
-
 require "DB/connect.php";
 
 $nome = $_POST['nome'];
-$idade = $_POST['idade'];
+$idade = $_POST['idade'];; 
 
-
-$sql = "INSERT INTO usuarios(nome,idade) values ('$nome','$idade')";
-$query = mysqli_query($link,$sql);
-
-
-if($query === true){
-	header("location: listadeusuario.php");
+if(empty($nome) || empty($idade)){
+  echo "<div id='error'>O nome e idade devem ser preenchidos</div>";
+  header("Location: cadastrar.php");
+  return;
+}else{
+	$sql = "INSERT INTO usuarios(nome,idade) values ('$nome','$idade')";
+	$query = mysqli_query($link,$sql);
 }
+
+header("location: listadeusuario.php");

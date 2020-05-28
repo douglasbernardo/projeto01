@@ -12,7 +12,7 @@ $query = mysqli_query($link,$sql);
 }
 
 if($query===true){
-	header('location: listadeusuarios.php');
+	header('location: listadeusuario.php');
 }
 
 ?>
