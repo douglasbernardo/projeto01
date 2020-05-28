@@ -27,15 +27,7 @@ a.btn {
 	
 }
 
-.btn.primary {
-	font-family: 'Fjalla One', sans-serif;
-}
-
-.btn.danger {
-	font-family: 'Fjalla One', sans-serif;
-}
-
-.btn.secondary {
+.link {
 	font-family: 'Fjalla One', sans-serif;
 }
 
@@ -58,4 +50,7 @@ td.texto_lista_usuarios {
 h2 {
 	font-family: 'Rubik Mono One', sans-serif;
 	font-size: 20px;
+}
+.input {
+	border: 3px;
 }
