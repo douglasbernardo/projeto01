@@ -11,10 +11,10 @@
 				<th>excluir</th>
 			</tr>
  				<?php while($row = mysqli_fetch_array($query,MYSQLI_ASSOC)) : ?>
-	 			<tr class=<?php if($row['id']%2 == 0) { echo "silver"; } else { echo "red"; } ?>>
+	 			<tr class=<?php if($row['id']%2 == 0) { echo "silver"; } ?>>
 	 				<td class="texto_lista_usuarios"><?php echo $row["nome"]; ?></td>
 	 				<td class="texto_lista_usuarios"><?php echo $row["idade"]; ?></td>
-	 				<td class="texto_lista_usuarios"><a href="excluir.php?id=<?php echo $row['id']; ?> ">Excluir Usuario</a></td>
+	 				<td class="texto_lista_usuarios"><a href="excluir.php?id=<?php echo $row['id'] ?>">Excluir usuario</a></td>
 	 			</tr>
 	 		<?php endwhile ?>
  		</table>
