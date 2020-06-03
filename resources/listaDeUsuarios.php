@@ -2,7 +2,7 @@
 	
 	require "DB/connect.php";
 
-	$sql = "SELECT id,nome,idade FROM usuarios";
+	$sql = "SELECT id,nome,idade FROM usuarios ORDER BY nome";
 	$query = mysqli_query($link,$sql);
 
 	if($query === true){
