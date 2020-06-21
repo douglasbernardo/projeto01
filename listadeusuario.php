@@ -1,7 +1,3 @@
-<?php
-	
-	require_once ("resources/listaDeUsuarios.php");
-?>
 
 <?php require __DIR__ . '/html/inicio.php'; ?>
 		<table border>
@@ -10,14 +6,25 @@
 				<th>idade:</th>
 				<th>excluir</th>
 			</tr>
- 				<?php while($row = mysqli_fetch_array($query,MYSQLI_ASSOC)) : ?>
+				<?php 
+				 $pdo = require_once "DB/connect.php";
+				 try{
+				 	$sqlSelecionar = "SELECT id,nome,idade FROM usuarios";
+				 }catch(Exception $e){
+					 echo "Error". $e->getMessage();
+				 }
+				?>
+				<?php foreach($pdo->query($sqlSelecionar) as $row): ?>
 	 			<tr class=''>
 	 				<td class="texto_lista_usuarios"><?php echo $row["nome"]; ?></td>
 	 				<td class="texto_lista_usuarios"><?php echo $row["idade"]; ?></td>
 	 				<td class="texto_lista_usuarios"><a href="excluir.php?id=<?php echo $row['id'] ?>">Excluir usuario</a></td>
 	 			</tr>
-	 		<?php endwhile ?>
- 		</table>
+		 </table>
+		 <?php 	
+		 endforeach ; 
+			
+		?>
 		</div>
 		<div id="footer">
 		</div>

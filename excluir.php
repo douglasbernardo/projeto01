@@ -1,18 +1,19 @@
 <?php
 
-require_once "DB/connect.php";
+$pdo = require_once "DB/connect.php";
 try {
 	
 	$id = $_GET['id'];
-$sql = "DELETE FROM usuarios WHERE id = $id";
-$query = mysqli_query($link,$sql);
 
-} catch (Exception $e) {
-	
+	$sqlDeletar = "DELETE FROM usuarios WHERE id = :id";
+	$stmt = $pdo->prepare($sqlDeletar);
+	$stmt->bindValue(':id',$id);
+	$stmt->execute();
+
+} catch (PDOException $e) {
+	echo $e->getMessage();
 }
 
-if($query===true){
 	header('location: listadeusuario.php');
-}
 
 ?>

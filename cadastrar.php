@@ -1,7 +1,4 @@
-<?php
-	
-	require_once ("resources/listaDeUsuarios.php");
-?>
+
 <?php require __DIR__ . '/html/inicio.php'; ?>
 			<form action="inserirUsuario.php" method="POST">
 				<br>

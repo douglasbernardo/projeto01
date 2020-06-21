@@ -1,21 +1,13 @@
 <?php
-require "DB/connect.php";
+$pdo = require "DB/connect.php";
 
-$nome = filter_input(INPUT_POST,
-'nome',
-FILTER_SANITIZE_STRING);
 
-$idade = filter_input(INPUT_POST,
-'idade',
-FILTER_VALIDATE_INT);
+// Set the variables for the person we want to add to the database
+$nome = "Tom holand";
+$idade = "76";
 
-if (is_null($nome) || is_null($idade)){
-  echo "<div class ='danger'>O nome e idade devem ser preenchidos</div>";
-    header('location: /cadastrar.php');
-    return;
-}else{
-  $sql = "INSERT INTO usuarios(nome,idade) values ('$nome','$idade')";
-	$query = mysqli_query($link,$sql);
-}
+$stmt = $pdo->prepare("INSERT INTO usuarios (nome, idade) VALUES (?, ?)");
 
-header("location: listadeusuario.php");
+$stmt->bindParam(1, $nomes);
+$stmt->bindParam(2, $idade);
+var_dump($stmt->execute());
