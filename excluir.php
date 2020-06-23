@@ -8,12 +8,13 @@ try {
 	$sqlDeletar = "DELETE FROM usuarios WHERE id = :id";
 	$stmt = $pdo->prepare($sqlDeletar);
 	$stmt->bindValue(':id',$id);
-	$stmt->execute();
 
 } catch (PDOException $e) {
 	echo $e->getMessage();
 }
 
+if($stmt->execute()){
 	header('location: listadeusuario.php');
+}
 
 ?>
